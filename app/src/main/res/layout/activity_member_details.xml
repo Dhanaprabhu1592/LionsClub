@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:layout_gravity="center"
+    tools:context=".View.MemberDetailsActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/user_layout"
+    android:layout_margin="25dp"
+    android:orientation="vertical">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="25dp"
+    android:text="Welcome"
+    android:gravity="center_horizontal"
+    android:id="@+id/text_member_welcomname"
+    android:layout_margin="10dp"
+    android:textColor="@color/textColor"
+    android:fontFamily="@font/nunitoregular"
+
+   />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/textColor"
+
+            android:id="@+id/text_mjf"
+            android:fontFamily="@font/nunitoregular"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/text_member_name"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/nunitoregular"
+            />
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_weight="10"
+        android:id="@+id/text_member_clubname"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/nunitoregular"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_weight="10"
+        android:id="@+id/text_member_clubno"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/nunitoregular"
+
+        />
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_weight="10"
+            android:id="@+id/text_member_mobileno"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/nunitoregular"
+
+            />
+
+
+
+
+
+
+
+            />
+
+
+
+
+
+           <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_weight="10"
+        android:id="@+id/text_member_address1"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/nunitoregular"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_weight="10"
+        android:id="@+id/text_member_address2"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/nunitoregular"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_weight="10"
+        android:id="@+id/text_member_area"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/nunitoregular"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_weight="10"
+        android:id="@+id/text_member_city"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/nunitoregular"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_weight="10"
+        android:id="@+id/text_member_emailid"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/nunitoregular"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_weight="10"
+        android:id="@+id/text_member_dcportfolio"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/nunitoregular"
+
+        />
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:id="@+id/btn_back"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:text="Back"
+        android:textColor="#fff"
+        android:layout_margin="15dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/nunitoregular"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>
+ </ScrollView>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTint="@color/colorPrimary"
+        android:layout_centerVertical="true"/>
+
+    <include
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        layout="@layout/contact"/>
+</RelativeLayout>

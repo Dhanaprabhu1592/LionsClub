@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contact"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PMJF Lion S V Manickam, Lions Club of Anna Nagar"
+        android:gravity="center"
+        android:fontFamily="@font/nunitoregular"
+        android:textColor="@color/textColor"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Us:lionsvmannagar@gmail.com"
+        android:gravity="center"
+
+        android:fontFamily="@font/nunitoregular"
+        android:textColor="@color/textColor"
+        />
+
+
+
+</LinearLayout>

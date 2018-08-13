@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    tools:context=".View.SplashActivity"
+    >
+
+
+
+        <ImageView
+            android:layout_width="290dp"
+            android:layout_height="280dp"
+            android:elevation="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_logo"
+            android:background="@drawable/logo"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="District"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/nunitoregular"
+            android:id="@+id/text_district"
+            android:layout_below="@id/image_logo"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_district"
+            android:textSize="20sp"
+            android:fontFamily="@font/nunitoregular"
+            android:text="324A1"
+            android:textColor="@color/textColor"
+            android:gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:textSize="20sp"
+            android:fontFamily="@font/nunitoregular"
+            android:textColor="@color/textColor"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_alignParentBottom="true"
+            android:text="Powered By Whistle Developers"/>
+
+
+
+</RelativeLayout>
