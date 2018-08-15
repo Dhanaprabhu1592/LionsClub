@@ -1,9 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserActivity">
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".View.UserActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/layout"
+        android:layout_above="@+id/contact"
+        android:weightSum="1">
 
-</android.support.constraint.ConstraintLayout>
+        <ImageView
+            android:id="@+id/img_lion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/lions"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PMJF Lion S V Manickam"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/nunitoregular"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lions Club of Anna Nagar Welcomes  you"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/textColor"
+            android:fontFamily="@font/nunitoregular"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/img_lion"
+        android:id="@+id/btn_continue"
+        android:text="CONTINUE"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/textColor"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/nunitoregular"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+
+        />
+    </LinearLayout>
+
+
+</RelativeLayout>

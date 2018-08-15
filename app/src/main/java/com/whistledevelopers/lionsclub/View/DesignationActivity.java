@@ -65,6 +65,7 @@ public class DesignationActivity extends AppCompatActivity {
         designationArrayList.add(new Designation("President"));
         designationArrayList.add(new Designation("Secretary"));
         designationArrayList.add(new Designation("Treasurer"));
+        designationArrayList.add(new Designation("1st Vice President"));
         designationArrayList.add(new Designation("Member"));
 
         designationAdapter=new DesignationAdapter(DesignationActivity.this, designationArrayList);
@@ -178,6 +179,11 @@ public class DesignationActivity extends AppCompatActivity {
 
                 }
                 else if(position==15)
+                {
+                    data="firstvice";
+                    navigateMethod(data);
+                }
+                else if(position==16)
                 {
                     data="member";
                     navigateMethod(data);

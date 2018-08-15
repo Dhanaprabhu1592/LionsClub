@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.Filter;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -116,7 +117,11 @@ public class MembersActivity extends AppCompatActivity {
                         ));
                     }
 
-
+                    if(productList.isEmpty())
+                    {
+                        TextView txt_nodata=(TextView)findViewById(R.id.text_nodata);
+                        txt_nodata.setVisibility(View.VISIBLE);
+                    }
                     //creating adapter object and setting it to recyclerview
                     MemberDataAdapter adapter = new MemberDataAdapter(MembersActivity.this, productList);
                     recyclerView.setAdapter(adapter);

@@ -62,7 +62,7 @@ public class MemberDataAdapter extends RecyclerView.Adapter<MemberDataAdapter.Me
                     if (orig != null && orig.size() > 0) {
                         for (final MemberData g : orig) {
                             if (g.getName().toLowerCase()
-                                    .contains(constraint.toString()))
+                                    .contains(constraint.toString())||g.getClubname().toLowerCase().contains(constraint.toString()))
                                 results.add(g);
                         }
                     }
